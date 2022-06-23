@@ -1,0 +1,402 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+
+
+
+body {
+  background-color: #262626;
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+h1 {
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #e1bc3a;
+}
+
+h2 {
+  font-family: 'Montserrat', serif;
+  font-size: 2.5rem;
+  color: #e1bc3a;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', serif;
+  color: #e1bc3a;
+}
+
+p {
+  line-height: 2;
+  color: #eecc77;
+}
+
+a {
+  color: #eaf6f6;
+  font-family: 'Montserrat', serif;
+  margin: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e1bc3a;;
+}
+
+head{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+
+}
+
+
+
+
+.nav{
+  position: fixed;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-beizer(.5, 0, .5, 1);
+}
+
+.nav__list{
+  list-style: none;
+  display:flex;
+  height: 100%;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link{
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.nav__link:hover{
+  color: var(--clr-accent);
+}
+
+.nav-toggle{
+  padding: .5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position:absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger{
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before{
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after{
+  opacity: 0;
+}
+
+
+
+.hamburger{
+  display: block;
+  position:relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  background: var(--clr-accent);
+  width: 4em;
+  height: 3px;
+  border-radius: 4em;
+  transition: transform 250ms ease-in-out;
+}
+
+
+.hamburger::before,
+.hamburger::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before{top: 8px;}
+.hamburger::after{bottom: 8px;}
+
+
+
+
+
+
+
+
+
+.plane {
+  position: absolute;
+  width: 10%;
+  animation: mymove 5s infinite;
+}
+
+.plane {
+  animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 90%;
+  }
+}
+
+.city-img {
+  width: 67.7%;
+}
+
+.top-container {
+  background-color: #233142;
+  position: relative;
+  padding-top: 100px
+}
+
+.middle-container {
+  margin: 0 0 0 0;
+  /* position: relative; */
+  background-color: #354964;
+}
+
+.Profile-img {
+  margin: 100px 0 0 0;
+  width: 15%;
+}
+
+.intro {
+  width: 50%;
+  margin: 0 auto 40px auto;
+}
+
+.bottom-container {
+  background-color: #233142;
+   padding: 50px 0 20px;
+  position: relative;
+}
+
+.top-cloud {
+  position: absolute;
+  width: 15%;
+  right: 10%;
+  top: 5%;
+}
+
+.top-stars {
+  position: absolute;
+  width: 25%;
+  margin-left: 25%;
+}
+
+.bottom-stars {
+  position: absolute;
+  width: 25%;
+  margin-top: -20%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  width: 18%;
+  left: 200px;
+  bottom: 350px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 80px auto;
+  text-align: left;
+}
+
+.computer-img {
+  width: 25%;
+  float: left;
+  margin-right: 2%;
+}
+
+.design-img {
+  width: 25%;
+  float: right;
+  margin-left: 2%;
+  margin-bottom: 0;
+}
+
+.certificates-row {
+  width: 50%;
+  margin: 80px auto;
+  text-align: left;
+}
+
+.certificate-gif {
+  width: 25%;
+  float: left;
+  margin-right: 30px ;
+}
+
+.Imagechange {
+  width: 30%;
+  margin: 40px auto 50px auto;
+}
+
+.certificate-p {
+  text-align: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+.ContactMe {
+  color: #11999E;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.ContactBtn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top,  #eec83b, #a4840e);
+  background-image: -moz-linear-gradient(top,  #eec83b, #a4840e);
+  background-image: -ms-linear-gradient(top,  #eec83b, #a4840e);
+  background-image: -o-linear-gradient(top,  #eec83b, #a4840e);
+  background-image: -webkit-gradient(to bottom,  #eec83b, #a4840e);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', serif;
+  font-size: 21px;
+  font-weight: 100;
+  padding: 20px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: #1F628D;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ContactBtn:hover {
+  border: #337FED;
+  background: #30E3CB;
+  color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #a4840e, #755e0a );
+  background-image: -moz-linear-gradient(top, #a4840e, #755e0a);
+  background-image: -ms-linear-gradient(top, #a4840e, #755e0a);
+  background-image: -o-linear-gradient(top,  #a4840e, #755e0a);
+  background-image: -webkit-gradient(to bottom, #a4840e, #755e0a);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.car {
+  animation-timing-function: linear;
+}
+
+@keyframes carmove {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+.road {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+
+}
+
+.car {
+  position: absolute;
+  width: 25%;
+  top: 50px;
+  z-index: 1;
+  /* right: 1%; */
+  animation: carmove 5s infinite;
+}
