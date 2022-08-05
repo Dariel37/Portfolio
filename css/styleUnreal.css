@@ -6,21 +6,21 @@
 
 /* Custom Properties */
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
   --fw-reg: 300;
   --fw-bold: 900;
   --clr-White: #fff;
-  --clr-Light: #EEEEEE;
+  --clr-Light: #eeeeee;
   --clr-Dark: #222831;
-  --clr-Grey: #393E46;
-  --clr-accent: #00ADB5;
+  --clr-Grey: #393e46;
+  --clr-accent: #00adb5;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
-  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
-    0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -56,7 +56,7 @@ img {
 }
 
 strong {
-  font-weight: var(--fw-bold)
+  font-weight: var(--fw-bold);
 }
 
 :focus {
@@ -67,12 +67,12 @@ strong {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: .5em 2.5em;
+  padding: 0.5em 2.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -92,19 +92,19 @@ h3 {
 }
 
 h1 {
-  font-size: var(--fs-h1)
+  font-size: var(--fs-h1);
 }
 
 h2 {
-  font-size: var(--fs-h2)
+  font-size: var(--fs-h2);
 }
 
 h3 {
-  font-size: var(--fs-h3)
+  font-size: var(--fs-h3);
 }
 
 .section__title {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .section__title--intro {
@@ -128,7 +128,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-accent);
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
@@ -160,14 +160,14 @@ header {
   right: 0;
   z-index: 100;
   transform: translateX(100%);
-  transition: transform 250ms cubic-beizer(.5, 0, .5, 1);
+  transition: transform 250ms cubic-beizer(0.5, 0, 0.5, 1);
 }
 
 .nav__list {
   list-style: none;
   display: flex;
   height: 100%;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
@@ -186,7 +186,7 @@ header {
 }
 
 .nav-toggle {
-  padding: .5em;
+  padding: 0.5em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -205,7 +205,7 @@ header {
 }
 
 .nav-open .hamburger {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -233,7 +233,7 @@ header {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -306,7 +306,7 @@ header {
 }
 
 .section__title--services::after {
-  content: '';
+  content: "";
   display: block;
   width: 2em;
   height: 1px;
@@ -315,74 +315,9 @@ header {
   opacity: 0.25;
 }
 
-.services {
-  margin-bottom: 4em;
-}
-
-.service {
-  /* max-width: 500px; */
-  margin: 0 auto;
-}
-
-@media (min-width: 2000px) {
-  .services {
-    /* display: flex; */
-    /* max-width: 1000px; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    columns: 100px 3;
-    grid-column-gap: 10em;
-  }
-
-  .service+.service {
-    margin-left: 2em;
-  }
-}
-
-.about-me {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-me__img {
-  box-shadow: var(--bs);
-}
-
-@media (min-width: 600px) {
-  .about-me {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
-  }
-
-  .section__title--about {
-    grid-area: title;
-  }
-
-  .section__subtitle--about {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    position: relative;
-    left: -1em;
-    width: calc(100% + 2em);
-    padding-left: 1em;
-    padding-right: calc(200px + 4em);
-  }
-
-  .about-me__img {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
-  }
-}
-
 /* MY WORK */
 .my-work {
-  background-var(--clr-Grey);
+  background: var(--clr-Grey);
   color: var(--clr-light);
   text-align: center;
 }
@@ -404,9 +339,7 @@ header {
 }
 
 .portfolio__img {
-  transition:
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
 .portfolio__item:focus {
@@ -417,7 +350,7 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
-  opacity: .75;
+  opacity: 0.75;
 }
 
 /* FOOTER */
@@ -440,7 +373,7 @@ header {
 
 .footer__link:hover,
 .social-list__link:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .footer__link:hover {
@@ -456,27 +389,21 @@ header {
 }
 
 .social-list__item {
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 
 .social-list__link {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 /* individual portfolio item style */
 .portfolio-item-individual-section_title {
   background: var(--clr-accent);
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 0.5em;
   text-align: center;
-  font-size: 1.80em;
-}
-
-.portfolio-item-individual {
-  /* padding: 0 2em 2em;
-  max-width: 1500px;
-  margin: 0 auto; */
+  font-size: 1.8em;
 }
 
 .Certificate-item-individual {
@@ -485,8 +412,8 @@ header {
 }
 
 .certificates-item-individual-section_title {
-  font-size: 2.80em;
-  padding: .25em 1em;
+  font-size: 2.8em;
+  padding: 0.25em 1em;
 }
 
 .portfolio-item-individual p {
@@ -501,20 +428,15 @@ header {
   /* background-size: cover;
   background-blend-mode: multiply; */
   color: var(--clr-Grey);
-    text-align: center;
-    flex-wrap: wrap;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .carousel-inner img {
   width: 100%;
   /* height: 50vh; */
-  transition:
-  transform 750ms cubic-bezier(.5, 0, .5, 1),
-  opacity 250ms linear;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
-
-
-
 
 .carousel-inner img:hover {
   transform: scale(1.2);
@@ -530,7 +452,7 @@ header {
 }
 
 .Certificate-Section {
-  background-color:  var(--clr-Grey);
+  background-color: var(--clr-Grey);
   /*background-image: url(../img/Unreal.jpg);*/
   background-size: cover;
   background-blend-mode: multiply;
@@ -539,7 +461,7 @@ header {
 }
 
 .Shooter-section {
-  background-color:var(--clr-light);
+  background-color: var(--clr-light);
   /*background-image: url(../img/Unreal.jpg);*/
   /* background-size: cover;
   background-blend-mode: multiply; */
@@ -574,11 +496,8 @@ header {
   transition: all 1s ease;
 }
 
- .card-image {
-
-
+.card-image {
 }
-
 
 .flexboxExample {
   /* background-color: var(--clr-Dark) ; */
@@ -589,6 +508,5 @@ header {
   flex-wrap: wrap;
 }
 
-.d-block{
-
+.d-block {
 }

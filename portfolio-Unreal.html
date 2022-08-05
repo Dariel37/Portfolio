@@ -1,265 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dariel Unreal Section</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/74b9383d8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/styleUnreal.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dariel Unreal Section</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png>" alt="" />
+      </div>
 
+      <button class="nav-toggle" ariel-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
 
+      <nav class="nav" style="display: flow-root">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#Games" class="nav__link">Game Development</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <!-- Inroduction -->
+    <section
+      class="intro w3-center w3-animate-top"
+      style="animation-duration: 2s"
+    >
+      <h1 class="section__title section__title--intro">
+        Projects <strong>Unreal Engine</strong>
+      </h1>
+      <p
+        class="section__subtitle section__subtitle--intro"
+        style="color: #393e46"
+      >
+        Game Design & Development
+      </p>
+      <img src="img/unreallogo2.png" alt="a picture of me" class="intro__img" />
+    </section>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <link rel="stylesheet" href="css/styleUnreal.css">
-
-</head>
-
-<body>
-  <header>
-
-    <div class="logo">
-      <img src="img/logo.png>" alt="">
-    </div>
-
-    <button class="nav-toggle" ariel-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-
-    <nav class="nav" style="display:flow-root;">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-        <li class="nav__item"><a href="index.html#Games" class="nav__link">Game Development</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Inroduction -->
-  <section class="intro w3-center w3-animate-top" style="animation-duration: 2s;">
-    <h1 class="section__title section__title--intro">
-      Projects <strong>Unreal Engine</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro" style="color:#393E46">Game Design & Development</p>
-    <img src="img/unreallogo2.png" alt="a picture of me" class="intro__img">
-  </section>
-
-
-
-
-  <!-- ToonTank -->
-  <section class="ToonTank-section w3-animate-opacity" style="animation-duration: 2s;">
-    <div class="portfolio-item-individual">
-      <p class="portfolio-item-individual-section_title"><strong>ToonTank</strong></p>
-      <div class="flexboxExample">
-        <div id="ToonTankCarousel" class="card text-white bg-light mb-3 mx-auto container carousel slide w3-center w3-animate-left" data-interval="false" style="animation-duration: 2s"; data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#ToonTankCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#ToonTankCarousel" data-slide-to="1"></li>
-            <li data-target="#ToonTankCarousel" data-slide-to="2"></li>
-            <li data-target="#ToonTankCarousel" data-slide-to="3"></li>
-            <li data-target="#ToonTankCarousel" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block  " src="img/ToonTank.png" alt="First slide">
+    <!-- ToonTank -->
+    <section
+      class="ToonTank-section w3-animate-opacity"
+      style="animation-duration: 2s"
+    >
+      <div class="portfolio-item-individual">
+        <p class="portfolio-item-individual-section_title">
+          <strong>ToonTank</strong>
+        </p>
+        <div class="flexboxExample">
+          <div
+            id="ToonTankCarousel"
+            class="card text-white bg-light mb-3 mx-auto container carousel slide w3-center w3-animate-left"
+            data-interval="false"
+            style="animation-duration: 2s"
+            ;
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#ToonTankCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#ToonTankCarousel" data-slide-to="1"></li>
+              <li data-target="#ToonTankCarousel" data-slide-to="2"></li>
+              <li data-target="#ToonTankCarousel" data-slide-to="3"></li>
+              <li data-target="#ToonTankCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="img/ToonTank.png" alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="img/ToonTank1.png"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="img/ToonTank2.png"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="img/ToonTank3.png"
+                  alt="Forth slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <iframe
+                  width="100%"
+                  height="500"
+                  src="https://www.youtube.com/embed/SWoJ2t6nH8s"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block " src="img/ToonTank1.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block " src="img/ToonTank2.png" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block " src="img/ToonTank3.png" alt="Forth slide">
-            </div>
-            <div class="carousel-item">
-            <iframe  width="100%" height="500" src="https://www.youtube.com/embed/SWoJ2t6nH8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <a
+              class="carousel-control-prev"
+              href="#ToonTankCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#ToonTankCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#ToonTankCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#ToonTankCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
 
-        </div>
-
-
-        <!-- ToonTank CARD -->
-        <div class="card text-dark bg-light mb-3 mx-auto container w3-center w3-animate-right" style="max-width: 60rem; animation-duration: 2s";>
-          <div class="card-header">Project Description</div>
-          <div class="card-body">
-            <p class="card-text">ToonTank The player can control a tank and have to destroy all the turrent on this maze of a level to win. </p>
-            <p class="card-text">I learn how to add little affects when the player or enemies shoots their bullets and adding a sounds effects and shaking camera when they hit.</p>
+          <!-- ToonTank CARD -->
+          <div
+            class="card text-dark bg-light mb-3 mx-auto container w3-center w3-animate-right"
+            style="max-width: 60rem; animation-duration: 2s"
+            ;
+          >
+            <div class="card-header">Project Description</div>
+            <div class="card-body">
+              <p class="card-text">
+                ToonTank The player can control a tank and have to destroy all
+                the turrent on this maze of a level to win.
+              </p>
+              <p class="card-text">
+                I learn how to add little affects when the player or enemies
+                shoots their bullets and adding a sounds effects and shaking
+                camera when they hit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-
-
-
-
-
-
-
-
-  <!-- ThirdPersonShooter -->
-  <section class="Shooter-section">
-    <div class="portfolio-item-individual">
-      <p class="portfolio-item-individual-section_title"><strong>ThirdPersonShooter</strong></p>
-      <div class="flexboxExample">
-
-
-        <!-- ThirdPersonShooter CARD -->
-        <div class="card text-white bg-dark mb-3 mx-auto container w3-center w3-animate-left" style="max-width: 60rem; animation-duration: 2s";>
-          <div class="card-header">Project Description</div>
-          <div class="card-body">
-            <p class="card-text">this is a simple third person Shooter where the player goes around the map shoothing AI enemies. </p>
-            <p class="card-text"> I learn about UE4 AI Systems, and adding for each state of the enemies a simple animation, and to the player.
-              I also had the opportunity to Learned to create a HUD UI to represent the players health.</p>
-          </div>
-        </div>
-
-        <!-- ThirdPersonShooter carousel -->
-        <div id="ShooterCarousel" class="card text-white bg-dark mb-3 mx-auto container carousel slide w3-center w3-animate-right " data-interval="false" style="animation-duration: 2s"; data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#ShooterCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#ShooterCarousel" data-slide-to="1"></li>
-            <li data-target="#ShooterCarousel" data-slide-to="2"></li>
-            <li data-target="#ShooterCarousel" data-slide-to="3"></li>
-            <li data-target="#ShooterCarousel" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block  " src="img/Shooter1.png" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block " src="img/Shooter2.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block " src="img/Shooter3.png" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block " src="img/Shooter4.png" alt="Forth slide">
-            </div>
-            <div class="carousel-item">
-            <iframe  width="100%" height="500" src="https://www.youtube.com/embed/XppItxSJUL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- ThirdPersonShooter -->
+    <section class="Shooter-section">
+      <div class="portfolio-item-individual">
+        <p class="portfolio-item-individual-section_title">
+          <strong>ThirdPersonShooter</strong>
+        </p>
+        <div class="flexboxExample">
+          <!-- ThirdPersonShooter CARD -->
+          <div
+            class="card text-white bg-dark mb-3 mx-auto container w3-center w3-animate-left"
+            style="max-width: 60rem; animation-duration: 2s"
+            ;
+          >
+            <div class="card-header">Project Description</div>
+            <div class="card-body">
+              <p class="card-text">
+                this is a simple third person Shooter where the player goes
+                around the map shoothing AI enemies.
+              </p>
+              <p class="card-text">
+                I learn about UE4 AI Systems, and adding for each state of the
+                enemies a simple animation, and to the player. I also had the
+                opportunity to Learned to create a HUD UI to represent the
+                players health.
+              </p>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#ShooterCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+
+          <!-- ThirdPersonShooter carousel -->
+          <div
+            id="ShooterCarousel"
+            class="card text-white bg-dark mb-3 mx-auto container carousel slide w3-center w3-animate-right"
+            data-interval="false"
+            style="animation-duration: 2s"
+            ;
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#ShooterCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#ShooterCarousel" data-slide-to="1"></li>
+              <li data-target="#ShooterCarousel" data-slide-to="2"></li>
+              <li data-target="#ShooterCarousel" data-slide-to="3"></li>
+              <li data-target="#ShooterCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="img/Shooter1.png" alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="img/Shooter2.png"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="img/Shooter3.png" alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="img/Shooter4.png" alt="Forth slide" />
+              </div>
+              <div class="carousel-item">
+                <iframe
+                  width="100%"
+                  height="500"
+                  src="https://www.youtube.com/embed/XppItxSJUL8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#ShooterCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#ShooterCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section
+      class="Certificate-Section w3-animate-opacity"
+      style="animation-duration: 2s"
+      ;
+    >
+      <div class="Certificate-item-individual">
+        <p class="certificates-item-individual-section_title">
+          <strong>Certificates</strong>
+        </p>
+
+        <!-- My Unreal Certificates -->
+
+        <div class="portfolio">
+          <!-- Portfolio item 01 -->
+          <a class="portfolio__item">
+            <img src="img/UE4C++.png" alt="" class="portfolio__img" />
           </a>
-          <a class="carousel-control-next" href="#ShooterCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+
+          <!-- Portfolio item 02 -->
+          <a class="portfolio__item">
+            <img src="img/UE4Landscapes.png" alt="" class="portfolio__img" />
+          </a>
+
+          <!-- Portfolio item 03 -->
+          <a class="portfolio__item">
+            <img
+              src="img/UnrealEngineVRDevelopment.jpg"
+              alt=""
+              class="portfolio__img"
+            />
           </a>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-
-
-
-
-
-
-
-
-
-  <!-- Certificates -->
-  <section class="Certificate-Section w3-animate-opacity" style="animation-duration: 2s";>
-    <div class="Certificate-item-individual">
-      <p class="certificates-item-individual-section_title"><strong>Certificates</strong></p>
-
-      <!-- My Unreal Certificates -->
-
-      <div class="portfolio">
-        <!-- Portfolio item 01 -->
-        <a class="portfolio__item">
-          <img src="img/UE4C++.png" alt="" class="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 02 -->
-        <a class="portfolio__item">
-          <img src="img/UE4Landscapes.png" alt="" class="portfolio__img">
-        </a>
-
-        <!-- Portfolio item 03 -->
-        <a class="portfolio__item">
-          <img src="img/UnrealEngineVRDevelopment.jpg" alt="" class="portfolio__img">
-        </a>
-
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-  </section>
-
-
-
-
-
-
-
-
-
-
-  <!-- Footer -->
-  <footer class="footer">
-    <a href="vidaldariel93@gmail.com" class="footer__link">vidaldariel93@gmail.com</a>
-    <ul class="social-list">
-      <!-- <li class="social-list__item">
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="vidaldariel93@gmail.com" class="footer__link"
+        >vidaldariel93@gmail.com</a
+      >
+      <ul class="social-list">
+        <!-- <li class="social-list__item">
         <a class="social-list__link" href="https://linkedin.com">
           <i class="fab fa-twitter"></i>
         </a>
       </li> -->
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://github.com/Dariel37">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://linkedin.com">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="img/Resume Dariel.pdf">
-          <i class="fa-brands fa-500px"></i>
-        </a>
-      </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/Dariel37"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://linkedin.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://drive.google.com/file/d/1ppahpqKdmIet1si7BCa5wVPaw1ql13Lt/view"
+            target="_blank"
+          >
+            <i class="fa-solid fa-file"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-    </ul>
-  </footer>
-
-  <script src="index.js"></script>
-
-
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>

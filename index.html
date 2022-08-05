@@ -1,194 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://kit.fontawesome.com/74b9383d8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dariel Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <script src="https://kit.fontawesome.com/6127e70170.js" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dariel Portfolio Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/style.css">
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png>" alt="" />
+      </div>
 
-</head>
+      <button class="nav-toggle" ariel-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
 
-<body>
-  <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#Games" class="nav__link">Game Development</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="logo">
-      <img src="img/logo.png>" alt="">
-    </div>
+    <!-- Inroduction -->
+    <section
+      class="intro w3-center w3-animate-top"
+      style="animation-duration: 2s"
+      id="home"
+    >
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Dariel Vidal</strong>
+      </h1>
+      <p
+        class="section__subtitle section__subtitle--intro"
+        style="color: var(--clr-Dark)"
+      >
+        Software & Game Developer
+      </p>
+      <img src="img/DarielIntro.jpg" alt="a picture of me" class="intro__img" />
+    </section>
 
-    <button class="nav-toggle" ariel-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
+    <!-- My Services -->
+    <section
+      class="my-services w3-animate-opacity"
+      style="animation-duration: 7s"
+      id="services"
+    >
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Programing Languages</h3>
+          <p>
+            I have experience in different programming languages like C#, C++.
+          </p>
+          <p>web app, using Shiny app, R programming language.</p>
+          <p>For Webpage development I worked with HTML, CSS, BOOTSTRAP.</p>
+        </div>
+        <!-- / Service -->
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-        <li class="nav__item"><a href="#Games" class="nav__link">Game Development</a></li>
+        <div class="service">
+          <h3>Virtual Reality Developer</h3>
+          <p>
+            Using Unity and the XR interaction toolkit I created VR projects
+          </p>
+          <p>Learning how to use the Unity Engine once again</p>
+          <p>
+            I also worked with the basic of Virtual reality in Unreal Engine 4
+          </p>
+        </div>
+        <!-- / Service -->
+
+        <div class="service">
+          <h3>VideoGame Developer</h3>
+          <p>
+            I worked with Unity Engine to create basic games and VR projects
+          </p>
+          <p>Also used Unreal Engine 4 to create some video game projects</p>
+          <p>
+            Currently working with Godot Engine in a 2D Game and a tower defense
+            game
+          </p>
+        </div>
+        <!-- / Service -->
+      </div>
+      <!-- / Services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p
+        class="section__subtitle section__subtitle--about w3-animate-left"
+        style="height: 50px; animation-duration: 3s"
+      >
+        Developer
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          My name is Dariel Vidal, I graduated in Computer Science Degree with a
+          minor in VideoGame Design and Development at the Inter American
+          University Bayamon Campus.
+        </p>
+        <br />
+        <p>
+          I Participated in a 9-wk program for selected students in a Research
+          Experience for undergraduates at the Arecibo Observatory.
+        </p>
+        <br />
+
+        <p>
+          I also Participated in a part-time, 7-wk practice at Outcome Project
+          converting Data Dictionary and turn it into a Data Frame. Also
+          Developed a user-friendly Financial Calculator web app to create the
+          visualization of the calculations and data.
+        </p>
+      </div>
+
+      <img
+        src="img/DarielWhoIam.jpg"
+        alt="dariel second photo"
+        class="about-me__img w3-animate-right"
+        style="animation-duration: 3s"
+      />
+    </section>
+
+    <!-- My WebDevelopment Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitleGames section__subtitle--work">Website</p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a
+          href="https://dariel37.github.io/CSS-WebPage/"
+          target="_blank"
+          class="portfolio__item"
+        >
+          <img src="img/WebPage2.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a
+          href="https://ian-matias-dariel-vidal-projects.shinyapps.io/deploy/"
+          target="_blank"
+          class="portfolio__item"
+        >
+          <img
+            src="img/Financial Calculator.png"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a
+          href="https://www.energydepotpr.com"
+          target="_blank"
+          class="portfolio__item"
+        >
+          <img src="img/EnergyDepot.png" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- My Game development work -->
+    <section class="my-Gamework" id="Games">
+      <p class="section__subtitleGames section__subtitle--work">
+        Game Design & Development
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-Unreal.html" class="portfolio__item">
+          <img src="img/Unreal.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/GodotEngine.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="portfolio-Unity.html" class="portfolio__item">
+          <img src="img/Unity.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="vidaldariel93@gmail.com" class="footer__link"
+        >vidaldariel93@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            target="_blank"
+            href="https://github.com/Dariel37"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            target="_blank"
+            href="https://linkedin.com"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            target="_blank"
+            href="https://drive.google.com/file/d/1ppahpqKdmIet1si7BCa5wVPaw1ql13Lt/view?usp=sharing"
+          >
+            <i class="fa-solid fa-file"></i>
+          </a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </footer>
 
-  <!-- Inroduction -->
-  <section class="intro w3-center w3-animate-top" style="animation-duration: 2s;" id="home">
-    <h1 class="section__title section__title--intro">
-      Hi, I am <strong>Dariel Vidal</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro" style="color: var(--clr-Dark);">Software & Game Developer</p>
-    <img src="img/DarielIntro.jpg" alt="a picture of me" class="intro__img">
-  </section>
-
-
-  <!-- My Services -->
-  <section class="my-services w3-animate-opacity" style="animation-duration: 7s;" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Programing Languages</h3>
-        <p>I have experience in differents programming languages like C#, C++.</p>
-        <p>web app, using Shiny app, R programming language.</p>
-        <p>For Webpage development I worked with HTML, CSS, BOOTSTRAP.</p>
-
-      </div> <!-- / Service -->
-
-
-      <div class="service">
-        <h3>Virtual Reality Developer</h3>
-        <p>Using Unity and the XR interaction toolkit I created VR projects</p>
-        <p>Learning how to use the Unity Engine once again</p>
-        <p>I also worked with the basic of Virtual reality in Unreal Engine 4</p>
-      </div> <!-- / Service -->
-
-
-      <div class="service">
-        <h3>VideoGame Developer</h3>
-        <p>I worked with Unity Engine to create basic games and VR projects</p>
-        <p>Also used Unreal Engine 4 to create some videogame projects</p>
-        <p>Currently working with Godot Engine in a 2D Game and a tower defense game</p>
-      </div> <!-- / Service -->
-    </div> <!-- / Services -->
-
-    <a href="#work" class="btn">My Work</a>
-
-  </section>
-
-  <!-- About me -->
-  <section class="about-me" id="about">
-    <h2 class="section__title section__title--about">Who I am</h2>
-    <p class="section__subtitle section__subtitle--about  w3-animate-left" style="height: 50px; animation-duration: 3s;">Developer</p>
-
-    <div class="about-me__body">
-      <p>My name is Dariel Vidal,
-        I graduated in Computer Science Degree
-        with a minor in VideoGame Design and Development
-        at the Interamerican University Bayamon Campus.
-      </p>
-      <br>
-      <p> I Participated in a 9-wk program for selected students
-        in a Research Experience for undergraduates at the Arecibo Observatory.
-      </p>
-      <br>
-
-      <p> I also Participated in a part-time, 7-wk practice at Outcome Project
-        converting Data Dictionary and turn it into a Data Frame.
-        Also Developed a user-friendly Financial Calculator web app to create the visualization of the calculations and data.
-      </p>
-    </div>
-
-    <img src="img/DarielWhoIam.jpg" alt="dariel second photo" class="about-me__img  w3-animate-right" style=" animation-duration: 3s;">
-  </section>
-
-
-  <!-- My WebDevelopment Work -->
-  <section class="my-work" id="work">
-    <h2 class="section__title section__title--work">My work</h2>
-    <p class="section__subtitleGames section__subtitle--work"> Website</p>
-
-    <div class="portfolio">
-      <!-- Portfolio item 01 -->
-      <a href="indexWeb.html" class="portfolio__item">
-        <img src="img/WebPage2.png" alt="" class="portfolio__img">
-      </a>
-
-      <!-- Portfolio item 02 -->
-      <a href="https://ian-matias-dariel-vidal-projects.shinyapps.io/deploy/" class="portfolio__item">
-        <img src="img/Financial Calculator.png" alt="" class="portfolio__img">
-      </a>
-
-      <!-- Portfolio item 03 -->
-      <a href=https://www.energydepotpr.com class="portfolio__item">
-        <img src="img/EnergyDepot.png" alt="" class="portfolio__img">
-      </a>
-
-
-    </div>
-  </section>
-
-  <!-- My Gamedevelopment work -->
-  <section class="my-Gamework" id="Games">
-
-    <p class="section__subtitleGames section__subtitle--work"> Game Design & Development</p>
-
-    <div class="portfolio">
-      <!-- Portfolio item 01 -->
-      <a href="portfolio-Unreal.html" class="portfolio__item">
-        <img src="img/Unreal.jpg" alt="" class="portfolio__img">
-      </a>
-
-      <!-- Portfolio item 02 -->
-      <a href="#" class="portfolio__item">
-        <img src="img/GodotEngine.jpg" alt="" class="portfolio__img">
-      </a>
-
-      <!-- Portfolio item 03 -->
-      <a href="portfolio-Unity.html" class="portfolio__item">
-        <img src="img/Unity.jpg" alt="" class="portfolio__img">
-      </a>
-
-
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="footer">
-    <a href="vidaldariel93@gmail.com" class="footer__link">vidaldariel93@gmail.com</a>
-    <ul class="social-list">
-      <!-- <li class="social-list__item">
-        <a class="social-list__link" href="https://linkedin.com">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li> -->
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://github.com/Dariel37">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://linkedin.com">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://drive.google.com/file/d/1ppahpqKdmIet1si7BCa5wVPaw1ql13Lt/view?usp=sharing">
-          <i class="fa-brands fa-500px"></i>
-        </a>
-      </li>
-
-    </ul>
-  </footer>
-
-  <script src="index.js"></script>
-
-
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
