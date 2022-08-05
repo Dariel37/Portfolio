@@ -386,6 +386,7 @@ header {
 
 .portfolio {
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -463,11 +464,6 @@ header {
   text-align: center;
   font-size: 1.8em;
   color: var(--clr-Dark);
-}
-.portfolio-item-individual {
-  /* padding: 0 2em 2em;
-  max-width: 1500px;
-  margin: 0 auto; */
 }
 
 .Certificate-item-individual {
